@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>TP2</title>
+    <title>imane takhi</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -26,9 +26,92 @@
     <!--<script src="js/main.js"></script>-->
   </head>
   <body>
-    <h1>tp2</h1>
+    <h1>Tp2</h1>
     <!-- Add your site or application content here -->
-    <p>Hello world! This is HTML5 Boilerplate.</p>
-    <img src="../galilee.png" alt="Logo Galilee" />
-  </body>
+    <h1 style="background-color: powderblue">Saisie d'une fiche"personne"</h1>
+    
+    <form action="action.html" method="get">
+      <!-- votre code html avec tous les champs de saisie-->
+    
+    <p>
+      <label for="laststname">Nom</label>
+      <input
+        type="text"
+        name="laststname"
+        minlength="2"
+        maxlength="20"
+        required
+      />
+      <span class="icon-ok">✔</span>
+    </p>
+    <p>
+      <label for="firstname">Prénom</label>
+      <input
+        type="text"
+        name="firstname"
+        minlength="2"
+        maxlength="20"
+        required
+      />
+      <span class="icon-ok">✔</span>
+    </p>
+    <p>
+      <label for="birthday">Date de naissance</label>
+      <td>
+        <input type="date" placeholder="JJ/MM/AAAA" id="Date" name="birthday" />
+        <span class="icon-ok">✔</span><br><br />
+    </td>
+    <p>
+      <label for="Adress">Adresse</label>
+      <input
+        type="text"
+        name="Adress"
+        minlength="2"
+        maxlength="20"
+        required
+      />
+      <span class="icon-ok">✔</span>
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input
+        type="text"
+        name="email"
+        minlength="2"
+        maxlength="20"
+        required
+      />
+      <span class="icon-ok">✔</span>
+    </p>
+    <tr>
+      <td>
+        <input type="submit" value="envoyer" />
+      </td>
+    </tr>
+    
+    <link rel="stylesheet" href="style.css" />
+    
+  </table>
+</form>
+<br /><br />
+
+<div
+  style="
+    background-color: rgb(192, 246, 255);
+    color: black;
+    padding: 5px;
+    border-color: black;
+  "
+  id="Error"
+>
+  <br /><br />
+</div>
+
+<div
+style="background-color: rgb(132, 187, 190); color: white; padding: 5px"
+  id="resultat"
+></div>
+<br /><br />
+</body>
 </html>
+
